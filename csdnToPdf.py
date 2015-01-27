@@ -29,11 +29,7 @@ StringPrefix=''
 StringSurfix=' '
 def fixSynaxHilghLighter(html):
 	soup = BeautifulSoup(html,from_encoding='utf-8')
-	orginal=file('oringal.html','w')
-	orginal.write(html)
-	orginal.close()
 	userSoup = soup.find(name="div", attrs={"id":"body"})
-
 	classes=userSoup.findAll(name="pre")
 	try:
 		for cla in classes:
@@ -47,10 +43,6 @@ def fixSynaxHilghLighter(html):
 
 	str = userSoup.__str__()
 	dest = StringPrefix+str+StringSurfix
-
-	f = file('./test.html','w');
-	f.write(dest)
-	f.close
 	return dest
 '''
 if __name__ == '__main__':
@@ -94,12 +86,6 @@ if __name__ == '__main__':
 			s=s.replace('/','or')
 			s=s.replace(' ','')
 			s=s.decode('UTF-8','ignore').encode('UTF-8');
-			'''sAscii=s.decode('UTF-8','ignore').encode('GBK')
-			print sAscii
-			suffix=".htm"
-			ret=sAscii+suffix.decode('UTF-8','ignore').encode('GBK')
-			print ret
-			'''
 			print s
 
 			destHtml=blogDir+blogName+artNum+'.htm'
@@ -125,7 +111,3 @@ if __name__ == '__main__':
 				state=True
 				break;
 
-#if __name__ == '__main__':
-#	f=file("./csdn_blog/"+'1234'+'.htm', 'w')	#保存的目录
-#	f.write(login(url))
-#	f.close()
