@@ -1,0 +1,19 @@
+<script class="javascript" src="scripts/shCore.js"></script>
+<script class="javascript" src="scripts/shBrushCSharp.js"></script>
+<script class="javascript" src="scripts/shBrushPhp.js"></script>
+<script class="javascript" src="scripts/shBrushJScript.js"></script>
+<script class="javascript" src="scripts/shBrushJava.js"></script>
+<script class="javascript" src="scripts/shBrushVb.js"></script>
+<script class="javascript" src="scripts/shBrushSql.js"></script>
+<script class="javascript" src="scripts/shBrushXml.js"></script>
+<script class="javascript" src="scripts/shBrushDelphi.js"></script>
+<script class="javascript" src="scripts/shBrushPython.js"></script>
+<script class="javascript" src="scripts/shBrushRuby.js"></script>
+<script class="javascript" src="scripts/shBrushCss.js"></script>
+<script class="javascript" src="scripts/shBrushCpp.js"></script>
+<script class="javascript">
+dp.SyntaxHighlighter.HighlightAll('code');
+</script>
+
+</body>
+</html>

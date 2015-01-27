@@ -1,0 +1,980 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+     
+    <html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>    
+    <script type="text/javascript" src="http://csdnimg.cn/pubfooter/js/tracking.js" charset="utf-8"></script>  
+
+    <script type="text/javascript">
+        var protocol = window.location.protocol;
+        document.write('<script type="text/javascript" src="' + protocol + '//csdnimg.cn/pubfooter/js/repoAddr2.js?v=' + Math.random() + '"></' + 'script>');
+    </script>
+
+
+    <script id="allmobilize" charset="utf-8" src="http://a.yunshipei.com/46aae4d1e2371e4aa769798941cef698/allmobilize.min.js"></script>
+ <meta http-equiv="Cache-Control" content="no-siteapp" /><link rel="alternate" media="handheld" href="#" />
+
+    <title>【多媒体基础知识】 ---常见音频编码格式总结 - tx3344
+        - 博客频道 - CSDN.NET</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="description" content="AAC(Advanced Audio Coding)高级音频编码,是一种非常常见音频编码格式,出现于1997年，基于 MPEG-2的音频编码技术。由Fraunhofer IIS、杜比实验室、AT&amp;T、Sony（索尼）等公司共同开发，目的是取代MP3格式.2000年，MPEG-4标准出现后，AAC 重新集成了其特性，加入了SBR技术和PS技术，为了区别于传统的 MPEG-2 AAC 又称为" />
+    <script src="http://static.blog.csdn.net/scripts/jquery.js" type="text/javascript"></script>
+    <script type="text/javascript" src="http://static.blog.csdn.net/scripts/ad.js?v=1.1"></script>
+        <!--new top-->
+               <link rel="stylesheet" href="http://static.csdn.net/public/common/toolbar/css/index.css">        <!--new top-->
+
+    <link rel="Stylesheet" type="text/css" href="http://static.blog.csdn.net/skin/dark1/css/style.css?v=1.1" />
+    <link id="RSSLink" title="RSS" type="application/rss+xml" rel="alternate" href="/tx3344/rss/list" />
+    <link rel="shortcut icon" href="http://csdnimg.cn/public/favicon.ico" />
+    <link type="text/css" rel="stylesheet" href="http://static.blog.csdn.net/scripts/SyntaxHighlighter/styles/default.css" />
+ 
+
+
+</head>
+<body>
+    
+   
+      <!--new top-->
+    <script id="toolbar-tpl-scriptId" fixed="true" prod="blog" skin="black" src="http://static.csdn.net/public/common/toolbar/js/html.js" type="text/javascript"></script>
+     <!--new top-->
+    <div id="container">
+        <div id="header">
+    <div class="header">
+        <div id="blog_title">
+            <h2>
+                <a href="http://blog.csdn.net/tx3344">tx3344</a></h2>
+            <h3>专注多媒体相关技术</h3>
+            <div class="clear">
+            </div>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+</div>
+<div id="navigator">
+    <div class="navigator_bg">
+    </div>
+    <div class="navigator">
+        <ul>
+                <li id="btnContents"><a href="http://blog.csdn.net/tx3344?viewmode=contents"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_mulu'])">
+                    <img src="http://static.blog.csdn.net/images/ico_list.gif">目录视图</span></a></li>
+                <li id="btnView"><a href="http://blog.csdn.net/tx3344?viewmode=list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_zhaiyao'])">
+                    <img src="http://static.blog.csdn.net/images/ico_summary.gif">摘要视图</span></a></li>
+                <li id="btnRss"><a href="http://blog.csdn.net/tx3344/rss/list"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_RSS'])">
+                    <img src="http://static.blog.csdn.net/images/ico_rss.gif">订阅</span></a></li>                
+
+            </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    var username = "tx3344";
+    var _blogger = username;
+    var blog_address = "http://blog.csdn.net/tx3344";
+    var static_host = "http://static.blog.csdn.net";
+    var currentUserName = "";  
+</script>
+
+        <div id="body">
+            <div id="main">
+                <div class="main">
+                        <div class="ad_class">
+<div class="notice tracking-ad" data-mod='popu_3' > 
+
+
+<a href="http://edu.csdn.net/course/detail/330">
+<font color=blue>从零开始掌握iOS8开发技术（Swift版）</font></a>
+
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://blog.csdn.net/blogdevteam/article/details/42918959">
+<font color=red>那些年我们追过的Wrox精品红皮计算机图书
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+<a href="http://blog.csdn.net/csdnedu/article/details/43148831">
+<font color=blue>CSDN学院--学习礼包大派送
+</font></a>
+&nbsp;&nbsp;&nbsp;&nbsp;
+
+<a href="http://job.csdn.net/event/mobdev.html ">
+<font color=red>CSDN JOB带你坐飞机回家过年
+</font></a>
+
+
+</div>                        </div>
+                        
+
+  
+<link href="http://static.blog.csdn.net/css/comment1.css" type="text/css" rel="stylesheet" />
+<link href="http://static.blog.csdn.net/css/style1.css" type="text/css" rel="stylesheet" />
+<script language='JavaScript' type='text/javascript' src='http://download.csdn.net/js/jquery.cookie.js'></script>
+<script type="text/javascript" src="http://csdnimg.cn/rabbit/search-service/main.js"></script>
+  <script type="text/ecmascript">
+      window.quickReplyflag = true;
+    </script>
+<div id="article_details" class="details">
+    <div class="article_title">   
+         <span class="ico ico_type_Original"></span>
+
+
+    <h1>
+        <span class="link_title"><a href="/tx3344/article/details/7335634">
+        【多媒体基础知识】 ---常见音频编码格式总结
+        </a></span>
+    </h1>
+</div>
+
+    <div class="article_manage">
+        <span class="link_categories">
+        分类：
+            <a href="/tx3344/article/category/1095082" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">【多媒体技术】</a> 
+            <a href="/tx3344/article/category/1321468" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_fenlei']);">【多媒体基础知识】</a> 
+        </span>
+    <span class="link_postdate">2012-03-13 10:26</span>
+    <span class="link_view" title="阅读次数">1513人阅读</span>
+    <span class="link_comments" title="评论次数"><a href="#comments" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_pinglun'])">评论</a>(0)</span>
+    <span class="link_collect"><a href="javascript:void(0);" onclick="javascript:_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_shoucang']);collectArticle('【多媒体基础知识】 ---常见音频编码格式总结','7335634');return false;" title="收藏">收藏</a></span>
+    <span class="link_report"><a href="#report"  onclick="javascript:_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_jubao']);report(7335634,2);return false;" title="举报">举报</a></span>
+    
+</div>
+<div class="tag2box"><a href='http://www.csdn.net/tag/audio' target=_blank onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">audio</a><a href='http://www.csdn.net/tag/codec' target=_blank onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">codec</a><a href='http://www.csdn.net/tag/compression' target=_blank onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">compression</a><a href='http://www.csdn.net/tag/windows' target=_blank onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">windows</a><a href='http://www.csdn.net/tag/%e9%9f%b3%e4%b9%90' target=_blank onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">音乐</a><a href='http://www.csdn.net/tag/layer' target=_blank onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_tag']);">layer</a></div>
+
+  
+    
+<div id="article_content" class="article_content">
+
+<h3><strong>AAC(Advanced Audio Coding)</strong></h3>
+<blockquote>
+<p><span style="background-color:rgb(255,255,255)">高级音频编码,是一种非常常见音频编码&#26684;式,出现于1997年，基于 MPEG-2的音频编码技术。由Fraunhofer IIS、杜比实验室、AT&amp;T、Sony（索&#23612;）等公司共同开发，目的是取代MP3&#26684;式.2000年，MPEG-4标准出现后，AAC 重新集成了其特性，加入了SBR技术和PS技术，为了区别于传统的 MPEG-2 AAC 又称为 MPEG-4 AAC. 相关的规范标准分别是ISO/IEC 13818-7,ISO/IEC
+ 14496-3作为一种高压缩比的音频压缩算法，AAC压缩比通常为18：1，也有数据说为20：1，远胜mp3；</span></p>
+<p><span style="background-color:rgb(255,255,255)">在音质方面，由于采用多声道，和使用低复杂性的描述方式，使其比几乎所有的传统编码方式在同规&#26684;的情况下更胜一筹. AAC可以支持多达48个音轨，15个低频（LFE）音轨，5.1多声道支持，更高的采样率（最高可达96kHz，音频CD为44.1kHz）和更高的采样精度（支持8bit、16bit、24bit、32bit，音频CD为16bit）以及有多种语言的兼容能力，更高的解码效率，一般来说，AAC可以在对比MP3文件缩小30%的前提下提供更好的音质
+ AAC包含了如下9种规&#26684;</span></p>
+</blockquote>
+<blockquote>
+<p></p>
+<blockquote></blockquote>
+<ol>
+<li>
+<p><span style="font-size:13px; background-color:rgb(255,255,255)">MPEG-2 AAC LC 低复杂度规&#26684;（Low Complexity）</span></p>
+</li><li>
+<p><span style="font-size:13px; background-color:rgb(255,255,255)">MPEG-2 AAC Main 主规&#26684;</span></p>
+</li><li>
+<p><span style="font-size:13px; background-color:rgb(255,255,255)">MPEG-2 AAC SSR 可变采样率规&#26684;（Scaleable Sample Rate）</span></p>
+</li><li>
+<p><span style="font-size:13px; background-color:rgb(255,255,255)">MPEG-4 AAC LC 低复杂度规&#26684;（Low Complexity），现在的手机比较常见的 MP4 文件中的音频部份就包括了该规&#26684;音频文件</span></p>
+</li><li>
+<p><span style="font-size:13px; background-color:rgb(255,255,255)">MPEG-4 AAC Main 主规&#26684;</span></p>
+</li><li>
+<p><span style="font-size:13px; background-color:rgb(255,255,255)">MPEG-4 AAC SSR 可变采样率规&#26684;（Scaleable Sample Rate）</span></p>
+</li><li>
+<p><span style="font-size:13px; background-color:rgb(255,255,255)">MPEG-4 AAC LTP 长时期预测规&#26684;（Long Term Predicition）</span></p>
+</li><li>
+<p><span style="font-size:13px; background-color:rgb(255,255,255)">MPEG-4 AAC LD 低延迟规&#26684;（Low Delay）</span></p>
+</li><li>
+<p><span style="font-size:13px; background-color:rgb(255,255,255)">MPEG-4 AAC HE 高效率规&#26684;（High Efficiency）</span></p>
+</li></ol>
+<p></p>
+</blockquote>
+<h2></h2>
+<h3><span style="font-size:13px; background-color:rgb(255,255,255)"><strong>AC-3（Digital Audio Compression Standard）</strong>、 Revision A (ATSC Doc. A/52A)</span></h3>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<p><span style="background-color:rgb(255,255,255)">音频编码&#26684;式，传说中的杜比实验室的杰作，著名的有损数据压缩的多媒体储存&#26684;式。可以包括多达6个独立的声道。最知名的是5.1声道技术。在5.1声道技术中，5代表着5个基本声道，独立连接至五个不同的喇叭（20至20,000 Hz），分别是右前（RF），中（C），左前（LF），右后（RR），左后（LR）；而1则代表1个低频声效，连接至低音辅助喇叭（20至120 Hz）每个AC-3 的音频帧都是以0x0B77为同步头。开源库
+ 解码库 liba52。</span></p>
+</blockquote>
+<h3><span style="font-size:13px; background-color:rgb(255,255,255)">ALAC（Apple Lossless Audio Codec）</span></h3>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<h3><span style="font-weight:normal; background-color:rgb(255,255,255)"><span style="font-size:13px">苹果的无损音频压缩编码&#26684;式，ALAC与MP3的主要分别在于编码过程中，MP3会取消小部分高频及低频部分的音频数据，而ALAC则会如实记录，不会删除音频中任何细节数据。由于资 料无损，ALAC音频文件大小会比MP3大，通常每片音乐CD（约70至80分钟）经ALAC编码后，音频文件大小约300MB。<br>
+</span><br>
+</span></h3>
+</blockquote>
+<h3><span style="font-size:13px; background-color:rgb(255,255,255)">AMR（Adaptive Multi-Rate）自适应多速率音频压缩</span></h3>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px"><span style="background-color:rgb(255,255,255)"><span style="font-size:13px">音频编码&#26684;式</span><span style="font-size:13px">，是一个使语音编码最优化的专利。AMR被标准语音编码 3GPP在1998年10月选用，现在广泛在GSM和UMTS中使用。它使用1-8个不同的位速编码。</span><span style="font-size:13px">之前的手机里有很多amr的音频文件，可分成:<br>
+</span></span></blockquote>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px"><span style="font-size:13px; background-color:rgb(255,255,255)">1.AMR-NB</span></blockquote>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px"><span style="font-size:13px; background-color:rgb(255,255,255)">2.AMR-WB, Adaptive Multi-Rate - Wideband Speech Codec</span></blockquote>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px"><span style="font-size:13px; background-color:rgb(255,255,255)">3.AMR-WB&#43;, Extended Adaptive Multi-Rate - Wideband Speech Codec</span></blockquote>
+</blockquote>
+<h3>
+<blockquote></blockquote>
+<blockquote></blockquote>
+<strong>ATRAC（Adaptive Transform Acoustic Coding）<br>
+</strong></h3>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<p><span style="background-color:rgb(255,255,255)">是Sony 公司开发的一种相对老的音频编码&#26684;式，又细分成ATRAC1、ATRAC2、ATRAC3、ATRAC3plus，这些都是独立的技术，后来Sony把这些技术统称为ATRAC。在rmvb的封装&#26684;式中也能看到这种音频编码&#26684;式。</span></p>
+</blockquote>
+<p><strong>APE<br>
+</strong></p>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<p><span style="background-color:rgb(255,255,255)">APE是Monkey's Audio提供的一种无损压缩&#26684;式,APE可以无损失高音质地压缩和还原。APE的压缩率相当高，并且音质保持得很好,获得了不少发烧用户的青睐.<span style="font-size:13px"><br>
+</span></span></p>
+</blockquote>
+<h3><span style="font-size:13px"><strong>DTS (Digital Theater Systems )<br>
+</strong></span></h3>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px"><span style="font-size:13px; background-color:rgb(255,255,255)">大名鼎鼎的DTS （数码影院系统)是由DTS公司开发，一种多通道的音频技术，低损，环绕立体声，被广泛的应用在DVD等高清片源上。同样也需要授权，与杜比公司是竞争对手。最常见的是DTS 5.1：保存5条音频通道的数据用于环绕立体声,分别是center, left-front,
+ right-front, left-rear, and right-rear.除此之外DTS公司还开发了DTS 70 mm、DTS 70 ES、DTS NEO:6、DTS 96/24、DTS-HD Master Audio、DTS-HD High Resolution Audio、DTS Connect、DTS Surround Sensation等技术。由于版权比较严&#26684;，而且文档很难从网上找到。</span></blockquote>
+<h3>
+<p><span style="font-size:13px"><strong>FLAC</strong></span><span style="font-size:13px"> (<strong>Free Lossless Audio Codec</strong></span><span style="font-size:13px">)&nbsp;</span></p>
+</h3>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<h3>
+<p><span style="font-size:13px"><span style="background-color:rgb(255,255,255)"><span style="font-weight:normal">是一款开源的无损压缩的</span><span style="font-weight:normal">音频编码&#26684;式</span><span style="font-weight:normal">，它不会破坏任何原有的音频资讯，所以可以还原音乐光碟音质。现在它已被很多软件及硬件音频产品所支持，</span><span style="font-weight:normal">FLAC计划首页</span><a href="http://flac.sourceforge.net/" style="font-size:13px; font-weight:normal">
+ http://flac.sourceforge.net/</a></span><br>
+</span></p>
+</h3>
+</blockquote>
+<h3>
+<p><span style="font-size:13px">MP3(MPEG-1 or MPEG-2 Audio Layer III)</span></p>
+</h3>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<h3><span style="background-color:rgb(255,255,255)"><span style="font-size:13px">MPEG-1 or MPEG-2 Audio Layer III</span><span style="font-size:13px; font-weight:normal">经常被称作</span><span style="font-size:13px; font-weight:normal">MP3</span><span style="font-size:13px; font-weight:normal">，是目前最流行的</span><span style="font-size:13px; font-weight:normal">音频编码&#26684;式</span><span style="font-size:13px; font-weight:normal">，有损压缩，相关的规范标准在</span><span style="font-size:13px; font-weight:normal">ISO/IEC
+ 11172-3, ISO/IEC 13818-3</span><span style="font-size:13px; font-weight:normal">。</span><span style="font-size:13px; font-weight:normal">它是在1991年，由位于德国埃尔朗根的研究组织Fraunhofer-Gesellschaft的一组工程师发明和标准化的，它设计用来大幅度地降低音频数据量，将音乐以1:10 甚至 1:</span><span style="font-size:13px; font-weight:normal">12
+ 的压缩率，压缩成容量较小的文件。<br>
+</span><span style="font-size:13px; font-weight:normal">bit rates</span><span style="font-size:13px; font-weight:normal">对MP3来说是可变的，原则是</span><span style="font-size:13px; font-weight:normal">bit rates</span><span style="font-size:13px"><span style="font-weight:normal">越高声音文件中包含的原始声音信息越多，这样回放时声音品质也越高。<br>
+</span></span><span style="font-size:13px; font-weight:normal">就</span><span style="font-size:13px; font-weight:normal">bit rates</span><span style="font-size:13px"><span style="font-weight:normal">来说MP3可以分为2种：<br>
+</span></span><span style="font-size:13px; font-weight:normal">MP3-CBR：Constant Bit Rate 在MP3编码的早期，整个文件使用一个固定的位元率<br>
+</span><span style="font-size:13px; font-weight:normal">MP3_VBR： Variable Bit Rate 可以让MP3文件的每一段甚至每一帧都可以有单独的bitrate，这样做的好处就是在保证音质的前提下最大程度的限制了文件的大小。这个方法类&#20284;于声音控制的磁带录音机不记录静止部分节省磁带消耗。</span></span></h3>
+</blockquote>
+<h3>Ogg</h3>
+<blockquote style="margin:0pt 0pt 0pt 40px; border:medium none; padding:0px">
+<h3>
+<p><span style="background-color:rgb(255,255,255)"><span style="font-size:13px; font-weight:normal">Ogg是一个自由且开放标准的容器&#26684;式，由Xiph.Org 基金会所维护,“Ogg”意指一种文件&#26684;式，可以纳入各式各样自由和开放源代码的编解码器，包含音效、视频、文字（像字幕）与元数据的处理。<br>
+</span><span style="font-size:13px; font-weight:normal">1.</span><span style="font-size:13px; font-weight:normal">Ogg_Vorbis</span><span style="font-size:13px; font-weight:normal">:这就是咱们常见的.ogg结尾的音频文件，</span><span style="font-size:13px; font-weight:normal">Vorbis</span><span style="font-size:13px; font-weight:normal">是一种有损音讯压缩&#26684;式，由Xiph.Org基金会所领导并开放源代码。Vorbis通常以Ogg作为容器&#26684;式，所以常合称为Ogg
+ Vorbis。 &nbsp;</span></span></p>
+</h3>
+</blockquote>
+<h3>
+<p>PCM （Pulse Code Modulated Audio）</p>
+</h3>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<h3>
+<p><span style="font-size:13px; font-weight:normal">目前计算机应用中，最高保真水平的音频编码&#26684;式。PCM约定俗成了无损编码,能做到最大程度的无限接近绝对保真。被广泛用于素材保存及音乐欣赏，CD、DVD以及我们常见的WAV文件中均有应用，优点是音质好，缺点是体积大。<br>
+做嵌入式音视频产品时，一般情况的音视频都是芯片负责解码。如果遇到版权问题，例如AC3 DTS，有些时候芯片厂商要求很严&#26684;，用户会采取软解的方法，软解也就是把AC3 DTS等音频解成PCM，然后在送给芯片。<br>
+<br>
+</span></p>
+</h3>
+</blockquote>
+<p><span style="font-size:13px"><strong>RealAudio<br>
+</strong></span></p>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<p><span style="font-size:13px">网络中非常常见，在rmvb、rm封装&#26684;式中，或者是 .ra .ram音频文件，由</span><a href="http://zh.wikipedia.org/wiki/RealNetworks" title="RealNetworks" style="font-size:13px">RealNetworks</a><span style="font-size:13px">发展的一种</span>多媒体音频文件&#26684;式，目前已有很多版本：<br>
+</p>
+</blockquote>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<ul>
+<li><span style="font-size:13px">lpcJ, 14_4: IS-54 VSELP (RealAudio 1)</span></li><li><span style="font-size:13px">28_8: G.728 LD-CELP (RealAudio 2)</span></li><li><span style="font-size:13px">dnet: Dolby AC3 (RealAudio 3)</span></li><li><span style="font-size:13px">sipr: Sipro Lab Telecom ACELP-NET (RealAudio 4/5)</span></li><li><span style="font-size:13px">cook: G2/Cook Codec (RealAudio 6)</span></li><li><span style="font-size:13px">atrc: Sony ATRAC3 (RealAudio 8)</span></li><li><span style="font-size:13px">raac: MPEG-4 LC-AAC (RealAudio 9)</span></li><li><span style="font-size:13px">racp: MPEG-4 HE-AAC (RealAudio 10)</span></li><li><span style="font-size:13px">ralf: RealAudio Lossless Format (RealAudio 10)</span></li></ul>
+<span style="font-size:13px"></span></blockquote>
+<p><strong>WMA (Windows Media Audio)<br>
+</strong></p>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<p>是微软公司开发的一种数字音频压缩&#26684;式，WMA 7之后的WMA支持证书加密，未经许可（即未获得许可证书），即使是非法拷贝到本地，也是无法收听的。目前比较流行的是WMA 9：<br>
+</p>
+</blockquote>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px"><a href="http://www.digitalpreservation.gov/formats/fdd/fdd000092.shtml"><span style="font-size:13px"></span></a>
+<li class="sub"><span style="font-size:13px">WMA9, Windows Media 9 Audio Codec</span></li><li class="sub"><span style="font-size:13px">WMA9_PRO, Windows Media 9 Professional Audio Codec</span></li><li class="sub"><span style="font-size:13px">WMA9_LL, Windows Media 9 Lossless Audio Codec</span></li></blockquote>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<p><br>
+</p>
+</blockquote>
+<blockquote style="margin:0 0 0 40px; border:none; padding:0px">
+<h3>
+<p><br>
+</p>
+</h3>
+</blockquote>
+<h3>
+<p><br>
+</p>
+</h3>
+<p><br>
+</p>
+<br>
+
+</div>
+
+
+
+
+<!-- Baidu Button BEGIN -->
+
+<div class="bdsharebuttonbox" style="float: right;">
+<a href="#" class="bds_more" data-cmd="more" style="background-position:0 0 !important; background-image: url(http://bdimg.share.baidu.com/static/api/img/share/icons_0_16.png?v=d754dcc0.png) !important"></a>
+<a href="#" class="bds_qzone" data-cmd="qzone" title="分享到QQ空间"  style="background-position:0 -52px !important"></a>
+<a href="#" class="bds_tsina" data-cmd="tsina" title="分享到新浪微博"style="background-position:0 -104px !important"></a>
+<a href="#" class="bds_tqq" data-cmd="tqq" title="分享到腾讯微博"style="background-position:0 -260px !important"></a>
+<a href="#" class="bds_renren" data-cmd="renren" title="分享到人人网"style="background-position:0 -208px !important"></a>
+<a href="#" class="bds_weixin" data-cmd="weixin" title="分享到微信"style="background-position:0 -1612px !important" ></a>
+</div>
+<script>window._bd_share_config = { "common": { "bdSnsKey": {}, "bdText": "", "bdMini": "1", "bdMiniList": false, "bdPic": "", "bdStyle": "0", "bdSize": "16" }, "share": {} }; with (document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = 'http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion=' + ~(-new Date() / 36e5)];</script>
+<!-- Baidu Button END -->
+
+<!--192.168.100.35-->
+<ul class="article_next_prev">
+            <li class="next_article"><span onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian']);location.href='/tx3344/article/details/7349019';">下一篇</span><a href="/tx3344/article/details/7349019" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_xiayipian'])">【多媒体封装格式详解】---FLV</a></li>
+</ul>
+
+<!-- Baidu Button BEGIN -->
+<script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=1536434" ></script>
+<script type="text/javascript" id="bdshell_js"></script>
+<script type="text/javascript">
+    document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?cdnversion=" + Math.ceil(new Date()/3600000)
+</script>
+<!-- Baidu Button END -->
+
+
+        <div id="digg" ArticleId="7335634">
+            <dl id="btnDigg" class="digg digg_disable">
+                <dt onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_ding'])">顶</dt>
+                <dd>3</dd>
+            </dl>
+            <dl id="btnBury" class="digg digg_disable">
+                <dt onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_cai'])">踩</dt>
+                <dd>0</dd>
+            </dl>
+        </div>
+</div>
+      <dl class="blog-associat-tag">
+        <dt>主题推荐</dt>
+        <dd>
+                <a href="http://www.csdn.net/tag/多媒体" target="_blank" class="blog-tage-red" >多媒体</a> 
+                <a href="http://www.csdn.net/tag/编码" target="_blank" class="blog-tage-red" >编码</a> 
+                <a href="http://www.csdn.net/tag/开放源代码" target="_blank" class="blog-tage-red" >开放源代码</a> 
+                <a href="http://www.csdn.net/tag/数据压缩" target="_blank" class="blog-tage-red" >数据压缩</a> 
+                <a href="http://www.csdn.net/tag/计算机" target="_blank" class="blog-tage-red" >计算机</a> 
+        </dd>
+    </dl> 
+
+
+<dl class="blog-ass-articl tracking-ad"  data-mod="popu_36" id="res-relatived"> 
+     <dt><span>猜你在找</span></dt>    
+</dl>
+<div id="job_blog_reco">
+<script src="http://csdnimg.cn/jobreco/job_reco.js" type="text/javascript"></script>
+   
+     <script type="text/javascript">
+         csdn.position.show({
+         sourceType: "blog",
+         tplType: "blogDetail",
+         searchType: "detail",
+         searchKey: "7335634",
+             username: "",
+         containerId: "job_blog_reco"
+        }); 
+    </script>
+
+</div>
+
+<script type="text/javascript">
+    var searchtitletags = '【多媒体基础知识】 ---常见音频编码格式总结' + ',' + '多媒体,编码,开放源代码,数据压缩,计算机';
+    searchService({
+        index: 'blog',
+        query: searchtitletags,
+        from: 10,
+        size: 10,
+        appendTo: '#res-relatived',
+        url: 'recommend',
+        his: 2,
+        client: "blog_cf_enhance",
+        tmpl: '<dd style="background:url(http://static.blog.csdn.net/skin/default/images/blog-dot-red3.gif) no-repeat 0 10px;"><a href="#{ url }" title="#{ title }" strategy="#{ strategy }">#{ title }</a></dd>'
+    });
+
+ </script>   
+
+
+
+    <div id="ad_cen">
+   
+          <script type="text/javascript">
+              new Ad(4, 'ad_cen');
+          </script>
+    </div>
+<div class="comment_class">
+    <div id="comment_title" class="panel_head">
+        <span class="see_comment">查看评论</span><a name="comments"></a></div>
+    <div id="comment_list">
+    </div>
+    <div id="comment_bar">
+    </div>
+    <div id="comment_form">
+    </div>
+
+    <div class="announce">
+        * 以上用户言论只代表其个人观点，不代表CSDN网站的观点或立场<a name="reply"></a><a name="quote"></a></div>
+</div>
+
+<script type="text/javascript">
+    var fileName = '7335634';
+    var commentscount = 0;
+    var islock = false
+</script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/comment.js"></script>
+    <div id="ad_bot">
+    </div>
+    <script type="text/javascript">
+    new Ad(5, 'ad_bot');
+    </script>
+<div id="report_dialog">
+</div>
+
+<div id="d-top"  style="bottom:60px;">
+        <a id="quick-reply" class="btn btn-top q-reply" title="快速回复" style="display:none;">
+            <img src="http://static.blog.csdn.net/images/blog-icon-reply.png" alt="快速回复">
+        </a>    
+
+    <a id="d-top-a" class="btn btn-top backtop"  style="display: none;" title="返回顶部" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_huidaodingbu'])" style="">         
+         <img src="http://static.blog.csdn.net/images/top.png" alt="TOP">
+    </a>
+</div>
+<script type="text/javascript">
+    $(function ()
+    {
+        $("#ad_frm_0").height("90px");
+        
+        setTimeout(function(){
+            $("#ad_frm_2").height("200px");
+        },1000);
+        
+        /*
+        if($("#comment_content").length>0)
+        {
+            $("#quick-reply").show();
+
+            $("#quick-reply").click(function(){
+                setEditorFocus();
+            });
+        }       
+     
+        var d_top = $('#d-top-a');
+
+        document.onscroll = function ()
+        {
+            var scrTop = (document.body.scrollTop || document.documentElement.scrollTop);
+            if (scrTop > 500)
+            {
+                d_top.show();
+            } else
+            {
+                d_top.hide();
+            }
+        }
+        $('#d-top-a').click(function ()
+        {
+            scrollTo(0, 0);
+            this.blur();
+            return false;
+        });
+        */
+    });
+  
+</script>
+<style type="text/css">
+    .tag_list
+    {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D7CBC1;
+        color: #000000;
+        font-size: 12px;
+        line-height: 20px;
+        list-style: none outside none;
+        margin: 10px 2% 0 1%;
+        padding: 1px;
+    }
+    .tag_list h5
+    {
+        background: none repeat scroll 0 0 #E0DBD3;
+        color: #47381C;
+        font-size: 12px;
+        height: 24px;
+        line-height: 24px;
+        padding: 0 5px;
+        margin: 0;
+    }
+    .tag_list h5 a
+    {
+        color: #47381C;
+    }
+    .classify
+    {
+        margin: 10px 0;
+        padding: 4px 12px 8px;
+    }
+    .classify a
+    {
+        margin-right: 20px;
+        white-space: nowrap;
+    }
+</style>
+<div class="tag_list">
+    <h5>
+        <a href="http://www.csdn.net/tag/" target="_blank">核心技术类目</a></h5>
+    <div class="classify">
+<a title="全部主题" href="http://www.csdn.net/tag" target="_blank" onclick="LogClickCount(this,336);">全部主题</a>
+<a title="Hadoop" href="http://g.csdn.net/5272865" target="_blank" onclick="LogClickCount(this,336);">Hadoop</a>
+<a title="AWS" href="http://g.csdn.net/5272866" target="_blank" onclick="LogClickCount(this,336);">AWS</a>
+<a title="移动游戏" href="http://g.csdn.net/5272870" target="_blank" onclick="LogClickCount(this,336);">移动游戏</a>
+<a title="Java" href="http://g.csdn.net/5272871" target="_blank" onclick="LogClickCount(this,336);">Java</a>
+<a title="Android" href="http://g.csdn.net/5272872" target="_blank" onclick="LogClickCount(this,336);">Android</a>
+<a title="iOS" href="http://g.csdn.net/5272873" target="_blank" onclick="LogClickCount(this,336);">iOS</a>
+<a title="Swift" href="http://g.csdn.net/5272868" target="_blank" onclick="LogClickCount(this,336);">Swift</a>
+<a title="智能硬件" href="http://g.csdn.net/5272869" target="_blank" onclick="LogClickCount(this,336);">智能硬件</a>
+<a title="Docker" href="http://g.csdn.net/5272867" target="_blank" onclick="LogClickCount(this,336);">Docker</a>
+<a title="OpenStack" href="http://g.csdn.net/5272925" target="_blank" onclick="LogClickCount(this,336);">OpenStack</a>
+<a title="VPN" href="http://www.csdn.net/tag/vpn" target="_blank" onclick="LogClickCount(this,336);">VPN</a>
+<a title="Spark" href="http://g.csdn.net/5272924" target="_blank" onclick="LogClickCount(this,336);">Spark</a>
+<a title="ERP" href="http://www.csdn.net/tag/erp" target="_blank" onclick="LogClickCount(this,336);">ERP</a>
+<a title="IE10" href="http://www.csdn.net/tag/ie10" target="_blank" onclick="LogClickCount(this,336);">IE10</a>
+<a title="Eclipse" href="http://www.csdn.net/tag/eclipse" target="_blank" onclick="LogClickCount(this,336);">Eclipse</a>
+<a title="CRM" href="http://www.csdn.net/tag/crm" target="_blank" onclick="LogClickCount(this,336);">CRM</a>
+<a title="JavaScript" href="http://www.csdn.net/tag/javascript" target="_blank" onclick="LogClickCount(this,336);">JavaScript</a>
+<a title="数据库" href="http://www.csdn.net/tag/数据库" target="_blank" onclick="LogClickCount(this,336);">数据库</a>
+<a title="Ubuntu" href="http://www.csdn.net/tag/ubuntu" target="_blank" onclick="LogClickCount(this,336);">Ubuntu</a>
+<a title="NFC" href="http://www.csdn.net/tag/nfc" target="_blank" onclick="LogClickCount(this,336);">NFC</a>
+<a title="WAP" href="http://www.csdn.net/tag/wap" target="_blank" onclick="LogClickCount(this,336);">WAP</a>
+<a title="jQuery" href="http://www.csdn.net/tag/jquery" target="_blank" onclick="LogClickCount(this,336);">jQuery</a>
+<a title="BI" href="http://www.csdn.net/tag/bi" target="_blank" onclick="LogClickCount(this,336);">BI</a>
+<a title="HTML5" href="http://www.csdn.net/tag/html5" target="_blank" onclick="LogClickCount(this,336);">HTML5</a>
+<a title="Spring" href="http://www.csdn.net/tag/spring" target="_blank" onclick="LogClickCount(this,336);">Spring</a>
+<a title="Apache" href="http://www.csdn.net/tag/apache" target="_blank" onclick="LogClickCount(this,336);">Apache</a>
+<a title=".NET" href="http://www.csdn.net/tag/.net" target="_blank" onclick="LogClickCount(this,336);">.NET</a>
+<a title="API" href="http://www.csdn.net/tag/api" target="_blank" onclick="LogClickCount(this,336);">API</a>
+<a title="HTML" href="http://www.csdn.net/tag/html" target="_blank" onclick="LogClickCount(this,336);">HTML</a>
+<a title="SDK" href="http://www.csdn.net/tag/sdk" target="_blank" onclick="LogClickCount(this,336);">SDK</a>
+<a title="IIS" href="http://www.csdn.net/tag/iis" target="_blank" onclick="LogClickCount(this,336);">IIS</a>
+<a title="Fedora" href="http://www.csdn.net/tag/fedora" target="_blank" onclick="LogClickCount(this,336);">Fedora</a>
+<a title="XML" href="http://www.csdn.net/tag/xml" target="_blank" onclick="LogClickCount(this,336);">XML</a>
+<a title="LBS" href="http://www.csdn.net/tag/lbs" target="_blank" onclick="LogClickCount(this,336);">LBS</a>
+<a title="Unity" href="http://www.csdn.net/tag/unity" target="_blank" onclick="LogClickCount(this,336);">Unity</a>
+<a title="Splashtop" href="http://www.csdn.net/tag/splashtop" target="_blank" onclick="LogClickCount(this,336);">Splashtop</a>
+<a title="UML" href="http://www.csdn.net/tag/uml" target="_blank" onclick="LogClickCount(this,336);">UML</a>
+<a title="components" href="http://www.csdn.net/tag/components" target="_blank" onclick="LogClickCount(this,336);">components</a>
+<a title="Windows Mobile" href="http://www.csdn.net/tag/windowsmobile" target="_blank" onclick="LogClickCount(this,336);">Windows Mobile</a>
+<a title="Rails" href="http://www.csdn.net/tag/rails" target="_blank" onclick="LogClickCount(this,336);">Rails</a>
+<a title="QEMU" href="http://www.csdn.net/tag/qemu" target="_blank" onclick="LogClickCount(this,336);">QEMU</a>
+<a title="KDE" href="http://www.csdn.net/tag/kde" target="_blank" onclick="LogClickCount(this,336);">KDE</a>
+<a title="Cassandra" href="http://www.csdn.net/tag/cassandra" target="_blank" onclick="LogClickCount(this,336);">Cassandra</a>
+<a title="CloudStack" href="http://www.csdn.net/tag/cloudstack" target="_blank" onclick="LogClickCount(this,336);">CloudStack</a>
+<a title="FTC" href="http://www.csdn.net/tag/ftc" target="_blank" onclick="LogClickCount(this,336);">FTC</a>
+<a title="coremail" href="http://www.csdn.net/tag/coremail" target="_blank" onclick="LogClickCount(this,336);">coremail</a>
+<a title="OPhone " href="http://www.csdn.net/tag/ophone " target="_blank" onclick="LogClickCount(this,336);">OPhone </a>
+<a title="CouchBase" href="http://www.csdn.net/tag/couchbase" target="_blank" onclick="LogClickCount(this,336);">CouchBase</a>
+<a title="云计算" href="http://www.csdn.net/tag/云计算" target="_blank" onclick="LogClickCount(this,336);">云计算</a>
+<a title="iOS6" href="http://www.csdn.net/tag/iOS6" target="_blank" onclick="LogClickCount(this,336);">iOS6</a>
+<a title="Rackspace " href="http://www.csdn.net/tag/rackspace " target="_blank" onclick="LogClickCount(this,336);">Rackspace </a>
+<a title="Web App" href="http://www.csdn.net/tag/webapp" target="_blank" onclick="LogClickCount(this,336);">Web App</a>
+<a title="SpringSide" href="http://www.csdn.net/tag/springside" target="_blank" onclick="LogClickCount(this,336);">SpringSide</a>
+<a title="Maemo" href="http://www.csdn.net/tag/maemo" target="_blank" onclick="LogClickCount(this,336);">Maemo</a>
+<a title="Compuware" href="http://www.csdn.net/tag/compuware" target="_blank" onclick="LogClickCount(this,336);">Compuware</a>
+<a title="大数据" href="http://www.csdn.net/tag/大数据" target="_blank" onclick="LogClickCount(this,336);">大数据</a>
+<a title="aptech" href="http://www.csdn.net/tag/aptech" target="_blank" onclick="LogClickCount(this,336);">aptech</a>
+<a title="Perl" href="http://www.csdn.net/tag/perl" target="_blank" onclick="LogClickCount(this,336);">Perl</a>
+<a title="Tornado" href="http://www.csdn.net/tag/tornado" target="_blank" onclick="LogClickCount(this,336);">Tornado</a>
+<a title="Ruby" href="http://www.csdn.net/tag/ruby" target="_blank" onclick="LogClickCount(this,336);">Ruby</a>
+<a title="Hibernate" href="http://www.csdn.net/hibernate" target="_blank" onclick="LogClickCount(this,336);">Hibernate</a>
+<a title="ThinkPHP" href="http://www.csdn.net/tag/thinkphp" target="_blank" onclick="LogClickCount(this,336);">ThinkPHP</a>
+<a title="HBase" href="http://www.csdn.net/tag/hbase" target="_blank" onclick="LogClickCount(this,336);">HBase</a>
+<a title="Pure" href="http://www.csdn.net/tag/pure" target="_blank" onclick="LogClickCount(this,336);">Pure</a>
+<a title="Solr" href="http://www.csdn.net/tag/solr" target="_blank" onclick="LogClickCount(this,336);">Solr</a>
+<a title="Angular" href="http://www.csdn.net/tag/angular" target="_blank" onclick="LogClickCount(this,336);">Angular</a>
+<a title="Cloud Foundry" href="http://www.csdn.net/tag/cloudfoundry" target="_blank" onclick="LogClickCount(this,336);">Cloud Foundry</a>
+<a title="Redis" href="http://www.csdn.net/tag/redis" target="_blank" onclick="LogClickCount(this,336);">Redis</a>
+<a title="Scala" href="http://www.csdn.net/tag/scala" target="_blank" onclick="LogClickCount(this,336);">Scala</a>
+<a title="Django" href="http://www.csdn.net/tag/django" target="_blank" onclick="LogClickCount(this,336);">Django</a>
+<a title="Bootstrap" href="http://www.csdn.net/tag/bootstrap" target="_blank" onclick="LogClickCount(this,336);">Bootstrap</a>
+    </div>
+</div>
+
+<div id="pop_win" style="display:none ;position: absolute; z-index: 10000; border: 1px solid rgb(220, 220, 220); top: 222.5px; left: 630px; opacity: 1; background: none 0px 0px repeat scroll rgb(255, 255, 255);">
+    
+</div>
+<div id="popup_mask"></div>
+<style>
+    #popup_mask
+    {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: #000;
+        z-index: 9999;
+        left: 0px;
+        top: 0px;
+        opacity: 0.3;
+        filter: alpha(opacity=30);
+        display: none;
+    }
+
+</style>
+
+
+
+
+<script type="text/javascript">
+    $(function(){
+        setTimeout(function(){
+            $(".comment_body:contains('回复')").each(function(index,item){
+                var u=$(this).text().split('：')[0].toString().replace("回复","")
+                var thisComment=$(this);
+                if(u)
+                {
+                    $.getJSON("https://passport.csdn.net/get/nick?callback=?", {users: u}, function(a) {
+                        if(a!=null&&a.data!=null&&a.data.length>0)
+                        {
+                            nick=a.data[0].n; 
+                            if(u!=nick)
+                            {
+                                thisComment.text(thisComment.text().replace(u,nick));  
+                            }
+                        }       
+                    });  
+                }
+            });
+        },200);  
+        
+        setTimeout(function(){
+            $("a img[src='http://js.tongji.linezing.com/stats.gif']").parent().css({"position":"absolute","left":"50%"});
+        },300);
+    });
+
+    function loginbox(){
+        var $logpop=$("#pop_win");
+        $logpop.html('<iframe src="https://passport.csdn.net/account/loginbox?service=http://static.blog.csdn.net/callback.htm" frameborder="0" height="600" width="400" scrolling="no"></iframe>');
+
+        $('#popup_mask').css({
+            opacity: 0.5,
+            width: $( document ).width() + 'px',
+            height:  $( document ).height() + 'px'
+        });
+        $('#popup_mask').css("display","block");
+ 
+        $logpop.css( {
+            top: ($( window ).height() - $logpop.height())/ 2  + $( window 
+       ).scrollTop() + 'px',
+            left:($( window ).width() - $logpop.width())/ 2
+        } );
+ 
+        setTimeout( function () {
+            $logpop.show();
+            $logpop.css( {
+                opacity: 1
+            } );
+        }, 200 );
+ 
+        $('#popup_mask').unbind("click");
+        $('#popup_mask').bind("click", function(){
+            $('#popup_mask').hide();
+            var $clopop = $("#pop_win");
+            $("#common_ask_div_sc").css("display","none");
+            $clopop.css( {
+                opacity: 0
+            } );
+            setTimeout( function () {
+                $clopop.hide();
+            }, 350 );
+            return false;
+        });
+    }    
+
+</script>
+                        <div class="clear">
+                        </div>
+                    </div>                   
+                
+            </div>
+            <div id="side">
+    <div class="side">
+<div id="panel_Profile" class="panel">
+<ul class="panel_head"><span>个人资料</span></ul>
+<ul class="panel_body profile">
+<div id="blog_userface">
+    <a href="http://my.csdn.net/tx3344" target="_blank">
+    <img src="http://avatar.csdn.net/B/7/F/1_tx3344.jpg" title="访问我的空间" style="max-width:90%"/>
+    </a>
+    <br />
+    <span><a href="http://my.csdn.net/tx3344" class="user_name" target="_blank">tx3344</a></span>
+</div>
+<div class="interact">
+<a href="javascript:void(0);" class="attent" id="span_add_follow" title="[加关注]" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_guanzhu'])"></a>
+
+ <a href="javascript:void(0);" class="letter"  title="[发私信]" onclick="window.open('http://msg.csdn.net/letters/model?receiver=tx3344','_blank','height=350,width=700');_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_sixin'])"></a>  
+</div>
+<div id="blog_medal">
+                <div id="bms_box">
+                                            <a  target="_blank">
+                                                    <img src="http://csdnimg.cn/jifen/images/xunzhang/xunzhang/zhuanlandaren.png" onmouseover="m_over_m(this,2)" onmouseout="m_out_m()" alt="1" >
+                                            </a>
+               </div>
+</div>
+<ul id="blog_rank">
+    <li>访问：<span>117580次</span></li>
+    <li>积分：<span>1631</span> </li>    
+    <li >等级： <span style="position:relative;display:inline-block;z-index:1" >
+            <img src="http://csdnimg.cn/jifen/images/xunzhang/jianzhang/blog4.png" alt="" style="vertical-align: middle;" id="leveImg">
+            <div id="smallTittle" style=" position: absolute;  left: -24px;  top: 25px;  text-align: center;  width: 101px;  height: 32px;  background-color: #fff;  line-height: 32px;  border: 2px #DDDDDD solid;  box-shadow: 0px 2px 2px rgba (0,0,0,0.1);  display: none;   z-index: 999;">
+            <div style="left: 42%;  top: -8px;  position: absolute;  width: 0;  height: 0;  border-left: 10px solid transparent;  border-right: 10px solid transparent;  border-bottom: 8px solid #EAEAEA;"></div>
+            积分：1631 </div>
+        </span>  </li>
+    <li>排名：<span>第10695名</span></li>
+</ul>
+<ul id="blog_statistics">
+    <li>原创：<span>31篇</span></li>
+    <li>转载：<span>11篇</span></li>
+    <li>译文：<span>0篇</span></li>
+    <li>评论：<span>76条</span></li>
+</ul>
+</ul>
+</div>
+
+
+
+
+<div id="custom_column_21642875" class="panel">
+<ul class="panel_head"><span>博客公告</span></ul>
+<ul class="panel_body">
+
+<b><font color="red">本博客所有原创文章，欢迎转载；转载请勿篡改内容，并且注明出处，禁止用于商业目的，谢谢！ </font></b><b><font color="red">QQ:37527563</font></b>
+
+</ul>
+</div><div id="panel_Category" class="panel">
+    <ul class="panel_head"><span>博客专栏</span></ul>
+    <ul class="panel_body" id="sp_column">
+    <table cellpadding="0" cellspacing="0"><tr>
+    <td style="padding:10px 10px 0 0;">
+    <a href="http://blog.csdn.net/column/details/androidmedia.html" target="_blank"><img src="http://avatar.csdn.net/blogpic/20121024172852771.jpg" style="width:75px;height:75px;" /></a>
+    </td>
+    <td style="padding:10px 0; vertical-align:top;">
+    <a href="http://blog.csdn.net/column/details/androidmedia.html" target="_blank">Android多媒体开发</a>
+    <p>文章：12篇</p>
+    <span>阅读：56339</span>
+    </td>
+    </tr></table>
+    </ul>
+</div><div class="panel" id="panel_Search">
+    <ul class="panel_head"><span>文章搜索</span></ul>
+    <ul class="panel_body">
+        <form id="frmSearch" action="http://so.csdn.net/search" class="form_search" target="_blank">
+        <span><input id="inputSearch" type="text" class="blogsearch" title="请输入关键字" /></span>
+        <input id="btnSubmit" type="button" value="搜索" title="search in blog" />
+        <input type="hidden" name="q" id="inputQ" />
+        <input type="hidden" name="t" value="blog" />
+        <a id="btnSearchBlog" target="_blank"></a>
+        </form>
+    </ul>
+</div>
+
+<script type="text/javascript">
+    $(function () {
+        $("#btnSubmit").click(function () {           
+            search();
+        });
+
+        $("#frmSearch").submit(function () {
+            search();
+            return false;
+        });
+
+        function search()
+        {
+            var url = "http://so.csdn.net/so/search/s.do?q=" + encodeURIComponent($("#inputSearch").val()) + "&u=" + username + "&t=blog";
+            window.location.href = url;
+        }   
+    });
+</script>
+<div id="panel_Category" class="panel">
+<ul class="panel_head"><span>文章分类</span></ul>
+<ul class="panel_body">
+             <li>
+                <a href="http://blog.csdn.net/tx3344/article/category/1207767" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">【Android】</a><span>(13)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tx3344/article/category/1264688" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">【openmax】</a><span>(4)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tx3344/article/category/1275132" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">【多媒体封装格式详解】</a><span>(11)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tx3344/article/category/1321468" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">【多媒体基础知识】</a><span>(3)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tx3344/article/category/1258884" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">【玩转VLC】</a><span>(4)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tx3344/article/category/1095085" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">【架构与思想】</a><span>(5)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tx3344/article/category/1234994" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">【ffmpeg】</a><span>(10)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tx3344/article/category/1103920" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">【GStreamer】</a><span>(2)</span>
+            </li>
+             <li>
+                <a href="http://blog.csdn.net/tx3344/article/category/1095082" onclick="_gaq.push(['_trackEvent','function', 'onclick', 'blog_articles_wenzhangfenlei']); ">【多媒体技术】</a><span>(41)</span>
+            </li>
+</ul>
+</div><div id="hotarticls" class="panel">
+<ul class="panel_head">
+    <span>       
+阅读排行    </span>
+</ul>
+
+<ul class="panel_body itemlist">
+<li>
+<a href="/tx3344/article/details/8024489" title="Android多媒体开发【4】-- 上层mediaPlayer 是如何调到Stagefright的【2】【图解】">Android多媒体开发【4】-- 上层mediaPlayer 是如何调到Stagefright的【2】【图解】</a><span>(6875)</span>
+</li>
+<li>
+<a href="/tx3344/article/details/8084912" title="Android多媒体开发【8】-- AwesomePlayer基本框架及播放流程">Android多媒体开发【8】-- AwesomePlayer基本框架及播放流程</a><span>(6267)</span>
+</li>
+<li>
+<a href="/tx3344/article/details/8109185" title="Android多媒体开发【10】-- android中OpenMax的实现【1】整体框架">Android多媒体开发【10】-- android中OpenMax的实现【1】整体框架</a><span>(5990)</span>
+</li>
+<li>
+<a href="/tx3344/article/details/8106545" title="Android多媒体开发【9】--  OpenMax IL简介">Android多媒体开发【9】--  OpenMax IL简介</a><span>(5959)</span>
+</li>
+<li>
+<a href="/tx3344/article/details/8117908" title="Android多媒体开发【12】-- android中OpenMax的实现【3】OMX中主要成员">Android多媒体开发【12】-- android中OpenMax的实现【3】OMX中主要成员</a><span>(5657)</span>
+</li>
+<li>
+<a href="/tx3344/article/details/7414543" title="【多媒体封装格式详解】--- AAC ADTS格式分析">【多媒体封装格式详解】--- AAC ADTS格式分析</a><span>(5336)</span>
+</li>
+<li>
+<a href="/tx3344/article/details/8162656" title="【多媒体封装格式详解】---MKV【1】">【多媒体封装格式详解】---MKV【1】</a><span>(5251)</span>
+</li>
+<li>
+<a href="/tx3344/article/details/8126732" title="Android多媒体开发【11】-- android中OpenMax的实现【2】AwesomePlayer中openmax的入口">Android多媒体开发【11】-- android中OpenMax的实现【2】AwesomePlayer中openmax的入口</a><span>(4223)</span>
+</li>
+<li>
+<a href="/tx3344/article/details/8053106" title="Android多媒体开发【7】-- AwesomePlayer中TimedEventQueue-event事件调度器">Android多媒体开发【7】-- AwesomePlayer中TimedEventQueue-event事件调度器</a><span>(4213)</span>
+</li>
+<li>
+<a href="/tx3344/article/details/8016049" title="Android多媒体开发【1】-- 利用SurfaceView + MediaPlayer开发最简单的视频播放器">Android多媒体开发【1】-- 利用SurfaceView + MediaPlayer开发最简单的视频播放器</a><span>(3999)</span>
+</li>
+</ul>
+</div>
+<div id="newcomments" class="panel">
+<ul class="panel_head"><span>最新评论</span></ul>
+<ul class="panel_body itemlist">
+    <li>
+   
+         <a href="/tx3344/article/details/8176288#comments">【多媒体封装格式详解】---MKV【2】</a>
+    <p style="margin:0px;"><a href="/yongchurui" class="user_name">yongchurui</a>:
+楼主，请加qq454755494，请问一个mkv中多title时，独立的两个ebml单元有联系么，前...
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tx3344/article/details/8016793#comments">Android多媒体开发【3】-- 上层mediaPlayer 是如何调到Stagefright的【1】</a>
+    <p style="margin:0px;"><a href="/taozuiqizhong" class="user_name">taozuiqizhong</a>:
+银才，大神。
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tx3344/article/details/8224817#comments">【多媒体封装格式详解】---ASF(WMV/WMA)【1】</a>
+    <p style="margin:0px;"><a href="/yingmuliuchuan" class="user_name">yingmuliuchuan</a>:
+问下楼主在分析该ASF文件的时候用的什么工具啊？？？
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tx3344/article/details/8024489#comments">Android多媒体开发【4】-- 上层mediaPlayer 是如何调到Stagefright的【2】【图解】</a>
+    <p style="margin:0px;"><a href="/kehyuanyu" class="user_name">kehyuanyu</a>:
+膜拜
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tx3344/article/details/8162656#comments">【多媒体封装格式详解】---MKV【1】</a>
+    <p style="margin:0px;"><a href="/DONOT_WORRY_BE_HAPPY" class="user_name">DONOT_WORRY_BE_HAPPY</a>:
+你确定你的ebml解析没问题？？！
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tx3344/article/details/8162656#comments">【多媒体封装格式详解】---MKV【1】</a>
+    <p style="margin:0px;"><a href="/cccxxxlll123" class="user_name">cccxxxlll123</a>:
+“根据上面ID值查表得知 这个EMBL 名称为DocType 也就是说data的内容是string格...
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tx3344/article/details/8162656#comments">【多媒体封装格式详解】---MKV【2】</a>
+    <p style="margin:0px;"><a href="/cccxxxlll123" class="user_name">cccxxxlll123</a>:
+能否传我一个官方的解析工具下载地址，谢谢！
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tx3344/article/details/8162656#comments">Android多媒体开发【4】-- 上层mediaPlayer 是如何调到Stagefright的【2】【图解】</a>
+    <p style="margin:0px;"><a href="/appcounts" class="user_name">appcounts</a>:
+您的博客太赞了..
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tx3344/article/details/8162656#comments">【多媒体封装格式详解】---MKV【2】</a>
+    <p style="margin:0px;"><a href="/beichenming" class="user_name">beichenming</a>:
+最近在解析关于MKV格式的文件，在把里面的video转换成h264格式的时候，里面的block里的n...
+    </p>
+    </li>
+    <li>
+   
+         <a href="/tx3344/article/details/8556793#comments">【玩转VLC】---  Ubuntu12.04下編绎win32版本vlc</a>
+    <p style="margin:0px;"><a href="/brave121" class="user_name">brave121</a>:
+@zl751209a:哥们，解决了么？
+    </p>
+    </li>
+</ul>
+</div>
+    </div>
+    <div class="clear">
+    </div>
+</div>
+
+            <div class="clear">
+            </div>
+        </div>
+        
+
+<script type="text/javascript" src="http://csdnimg.cn/rabbit/cnick/cnick.js"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/newblog.min.js"></script>
+
+
+<script type="text/javascript" src="http://medal.blog.csdn.net/showblogmedal.ashx?blogid=1257053"></script>
+<script type="text/javascript" src="http://static.blog.csdn.net/scripts/JavaScript1.js"></script>
+
+    <script type="text/javascript" src="http://passport.csdn.net/content/loginbox/login.js"></script>
+<script type="text/javascript">document.write("<img src=http://counter.csdn.net/pv.aspx?id=24 border=0 width=0 height=0>");</script>
+<script type="text/javascript" src="http://www.csdn.net/ui/scripts/Csdn/counter.js"></script>
+<script type="text/javascript" src="http://ad.csdn.net/scripts/ad-blog.js"></script>
+<script type="text/javascript" src="http://zz.csdn.net/js/count.js"></script>
+<script type="text/javascript">
+    $(function () {
+        function __get_code_toolbar(snippet_id) {
+            return $("<a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "' target='_blank' title='在CODE上查看代码片' style='text-indent:0;'><img src='https://code.csdn.net/assets/CODE_ico.png' width=12 height=12 alt='在CODE上查看代码片' style='position:relative;top:1px;left:2px;'/></a>"
+                    + "<a href='https://code.csdn.net/snippets/"
+                    + snippet_id
+                    + "/fork' target='_blank' title='派生到我的代码片'  style='text-indent:0;'><img src='https://code.csdn.net/assets/ico_fork.svg' width=12 height=12 alt='派生到我的代码片' style='position:relative;top:2px;left:2px;'/></a>");
+        }
+        
+        $("[code_snippet_id]").each(function () {
+            __s_id = $(this).attr("code_snippet_id");
+            if (__s_id != null && __s_id != "" && __s_id != 0 && parseInt(__s_id) > 70020) {
+                __code_tool = __get_code_toolbar(__s_id);
+                $(this).prev().find(".tools").append(__code_tool);
+            }
+        });
+    });
+</script>
+
+    </div>
+      <!--new top-->
+    
+    <script id="csdn-toolbar-id" btnId="header_notice_num" wrapId="note1" count="5" subCount="5" type="text/javascript" src="http://static.csdn.net/public/common/toolbar/js/toolbar.js"></script>     <!--new top-->
+   
+    <link href="http://csdnimg.cn/comm_ask/css/ask_float_block.css" type="text/css" rel="stylesheet" />
+    <script language='JavaScript' type='text/javascript' src='http://csdnimg.cn/comm_ask/js/libs/wmd.js'></script>
+    <script language='JavaScript' type='text/javascript' src='http://csdnimg.cn/comm_ask/js/libs/showdown.js'></script>
+    <script language='JavaScript' type='text/javascript' src='http://csdnimg.cn/comm_ask/js/libs/prettify.js'></script>
+    <script language='JavaScript' type='text/javascript' src='http://csdnimg.cn/comm_ask/js/apps/ask_float_block.js'></script>
+
+</body>
+</html>
