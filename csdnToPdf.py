@@ -53,7 +53,8 @@ if __name__ == '__main__':
 if __name__ == '__main__':
 #def main():
 	state=True
-
+	pageNum=0
+	listNum=0
 	surfixFd= open('./Surfix.txt','r')
 	prefixFd = open('./prefix.txt','r')
 	StringPrefix = prefixFd.read()
@@ -72,6 +73,7 @@ if __name__ == '__main__':
 		soup=BeautifulSoup(html)
 		articals=soup.findAll(name='div',attrs={'class' : 'list_item article_item'})
 		for artical in articals:
+			listNum+=1
 			title=artical.find('a')
 			artical_url='http://blog.csdn.net/'+title['href']
 			print artical_url
@@ -86,11 +88,13 @@ if __name__ == '__main__':
 			s=s.replace('/','or')
 			s=s.replace(' ','')
 			s=s.decode('UTF-8','ignore').encode('UTF-8');
+			s='P%02d_%02d_%s'%(pageNum,listNum,s)
 			print s
-
 			destHtml=blogDir+blogName+artNum+'.htm'
 			destPdf=blogDir+blogName+artNum+'.pdf'
 			realNamePdf=blogDir+blogName+s+'.pdf'
+			if os.path.isfile(realNamePdf):
+				continue;
 			f=file(destHtml, 'w')	#保存的目录
 			f.write(fixSynaxHilghLighter(login(artical_url)))
 			f.close()
@@ -106,6 +110,8 @@ if __name__ == '__main__':
 		state=False
 		for i in next :
 			if i.text.encode('utf-8')==str('下一页') :
+				pageNum+=1
+				listNum=0;
 				url='http://blog.csdn.net/'+i['href']
 				html=login(url)
 				state=True
