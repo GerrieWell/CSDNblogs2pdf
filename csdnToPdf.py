@@ -10,8 +10,9 @@ sys.setdefaultencoding('utf-8')
 
 #url='http://blog.csdn.net/Luoshengyang/'# csdn的账号 default
 #blogName='Luoshengyang/'	#default
-url='http://blog.csdn.net/jerryjbiao/article/category/870957/'
-blogName='STL_TOPIC/'
+#url='http://blog.csdn.net/jerryjbiao/article/category/870957/'
+url='http://blog.csdn.net/xubin341719'
+blogName='clk/'
 blogDir='./csdn_blog/'
 headers={
     'User-Agent':'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:30.0) Gecko/20100101 Firefox/30.0'
