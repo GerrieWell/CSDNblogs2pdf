@@ -32,5 +32,7 @@ wkhtmltopdf
 
 ```
 sudo apt-get install wkhtmltopdf
+mac:
+sudo brew install wkhtmltopdf
 ``` 
 
